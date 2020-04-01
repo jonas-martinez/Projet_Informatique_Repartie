@@ -1,5 +1,16 @@
 # Projet_Informatique_Repartie
 
+## Equipes
+* Chef de projet
+   * Adrien
+* Equipe infrastructure d'accueil
+   * ...
+   * ...
+* Equipe solution java
+   * ...
+   * ...
+   * ...
+
 ## Répartition du travail
 * La première équipe sera assignée à la mise en place de l’infrastructure d'accueil de notre solution, soyez sûrs d’être à l’aise avec la virtualisation et la communication entre les programmes java, à savoir :
     * Mise en place de 2 machines virtuelles sur une de vos machines :
