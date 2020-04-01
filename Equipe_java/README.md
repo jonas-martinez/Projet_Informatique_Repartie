@@ -1,1 +1,1 @@
-# Equipe Infrastructure d'accueil
+# Equipe Développement Java
