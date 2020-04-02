@@ -10,7 +10,7 @@
    * Jihane ( 2 agents distincts : agents texte et agent image ) 
    * Jonas (Aiguilleur)
    * Renaud
-   * ...
+   * Loïc
 
 ## Répartition du travail
 * La première équipe sera assignée à la mise en place de l’infrastructure d'accueil de notre solution, soyez sûrs d’être à l’aise avec la virtualisation et la communication entre les programmes java, à savoir :
