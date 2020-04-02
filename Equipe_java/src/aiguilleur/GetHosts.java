@@ -1,4 +1,4 @@
-package projetinfo;
+package aiguilleur;
 
 import jade.content.AgentAction;
 

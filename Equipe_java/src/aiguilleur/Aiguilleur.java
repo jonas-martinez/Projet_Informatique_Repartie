@@ -1,4 +1,4 @@
-package projetinfo;
+package aiguilleur;
 
 import java.util.ArrayList;
 import java.util.Random;
