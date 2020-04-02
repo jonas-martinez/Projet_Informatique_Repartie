@@ -4,8 +4,8 @@
 * Chef de projet
    * Adrien
 * Equipe infrastructure d'accueil
+   * SOW Mamadou sanou 
    * ...
- SOW Mamadou sanou 
 * Equipe solution java
    * Jihane ( 2 agents distincts : agents texte et agent image ) 
    * Jonas (Aiguilleur)
