@@ -9,7 +9,7 @@
 * Equipe solution java
    * Jihane ( 2 agents distincts : agents texte et agent image ) 
    * Jonas
-   * ...
+   * Renaud
    * ...
 
 ## Répartition du travail
