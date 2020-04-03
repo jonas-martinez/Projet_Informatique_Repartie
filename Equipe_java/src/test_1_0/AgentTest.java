@@ -82,12 +82,11 @@ public class AgentTest extends Agent {
 		try {
 			AddHost ah = new AddHost();
 			ah.addHost(host);
-			System.out.println("AgentTest - addHost - " + ah.getHost());
 			Action actExpr = new Action(aiguilleur, ah);
 			getContentManager().fillContent(request, actExpr);
 			addBehaviour(new AchieveREInitiator(this, request) {
 				public void handleInform(ACLMessage inform) {
-					System.out.println("Agent " + myAgent.getLocalName() + " - Added host - performative: "
+					System.out.println("Agent " + myAgent.getLocalName() + " - Add Host - performative: "
 							+ inform.getPerformative());
 				}
 			});
