@@ -12,5 +12,4 @@ public class AddHost implements AgentAction {
 	public String getHost() {
 		return this.host;
 	}
-
 }
