@@ -25,13 +25,15 @@ public class AgentTest extends Agent {
 		// addBehaviour(new OntologyServer(this, AiguilleurOntology.getInstance(),
 		// ACLMessage.REQUEST, this));
 
-		requestGetHosts();
-		requestAddHost("test");
-		requestGetHosts();
-		requestSelectHostRandomly();
+		requestGetHosts(aiguilleur);
+		requestAddHost(aiguilleur, "test");
+		requestAddHost(aiguilleur, "test2");
+		requestAddHost(aiguilleur, "test3");
+		requestGetHosts(aiguilleur);
+		requestSelectHostRandomly(aiguilleur);
 	}
 
-	private void requestGetHosts() {
+	private void requestGetHosts(AID aiguilleur) {
 		ACLMessage request = new ACLMessage(ACLMessage.REQUEST);
 		request.addReceiver(aiguilleur);
 		request.setOntology(AiguilleurOntology.getInstance().getName());
@@ -50,7 +52,7 @@ public class AgentTest extends Agent {
 		}
 	}
 
-	private void requestAddHost(String host) {
+	private void requestAddHost(AID aiguilleur, String host) {
 		ACLMessage request = new ACLMessage(ACLMessage.REQUEST);
 		request.addReceiver(aiguilleur);
 		request.setOntology(AiguilleurOntology.getInstance().getName());
@@ -71,7 +73,7 @@ public class AgentTest extends Agent {
 		}
 	}
 
-	private void requestSelectHostRandomly() {
+	private void requestSelectHostRandomly(AID aiguilleur) {
 		ACLMessage request = new ACLMessage(ACLMessage.REQUEST);
 		request.addReceiver(aiguilleur);
 		request.setOntology(AiguilleurOntology.getInstance().getName());
