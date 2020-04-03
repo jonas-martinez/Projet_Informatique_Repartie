@@ -1,4 +1,4 @@
-package PROJET;
+package agentDistinct;
 
 import jade.content.onto.BeanOntology;
 import jade.content.onto.Ontology;

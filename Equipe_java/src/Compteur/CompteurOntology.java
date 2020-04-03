@@ -1,4 +1,4 @@
-package Compteur;
+package compteur;
 
 import jade.content.onto.BeanOntology;
 

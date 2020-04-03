@@ -1,4 +1,4 @@
-package Compteur;
+package compteur;
 
 import jade.content.lang.sl.SLCodec;
 import jade.core.Agent;

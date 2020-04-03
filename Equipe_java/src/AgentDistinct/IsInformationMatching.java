@@ -1,4 +1,4 @@
-package PROJET;
+package agentDistinct;
 import jade.content.AgentAction;
 public class IsInformationMatching implements AgentAction {
 	private String type; 

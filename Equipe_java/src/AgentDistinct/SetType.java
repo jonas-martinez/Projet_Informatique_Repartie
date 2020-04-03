@@ -1,4 +1,4 @@
-package PROJET;
+package agentDistinct;
 import jade.content.AgentAction;
 public class SetType implements AgentAction{
 	private String type; 

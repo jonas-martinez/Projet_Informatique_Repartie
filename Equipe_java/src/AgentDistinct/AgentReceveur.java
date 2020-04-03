@@ -1,4 +1,4 @@
-package PROJET;
+package agentDistinct;
 import jade.content.lang.sl.SLCodec;
 import jade.core.AID;
 import jade.core.Agent;

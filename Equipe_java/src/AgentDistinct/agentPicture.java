@@ -1,4 +1,4 @@
-package PROJET;
+package agentDistinct;
 import jade.core.AID;
 import jade.core.Agent;
 public class agentPicture extends AgentReceveur{
