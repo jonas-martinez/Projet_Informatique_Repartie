@@ -32,20 +32,20 @@ public class AgentTest extends Agent {
 		receveur = new AID(receveurName, AID.ISLOCALNAME);
 
 		getContentManager().registerLanguage(new SLCodec());
-		/*
-		 * getContentManager().registerOntology(AiguilleurOntology.getInstance());
-		 * 
-		 * // addBehaviour(new OntologyServer(this, AiguilleurOntology.getInstance(), //
-		 * ACLMessage.REQUEST, this));
-		 * 
-		 * requestGetHosts(aiguilleur); requestAddHost(aiguilleur, "test");
-		 * requestAddHost(aiguilleur, "test2"); requestAddHost(aiguilleur, "test3");
-		 * requestGetHosts(aiguilleur); requestSelectHostRandomly(aiguilleur);
-		 * 
-		 * getContentManager().registerOntology(CompteurOntology.getInstance());
-		 */
 
-		// TODO COMPTEUR
+		getContentManager().registerOntology(AiguilleurOntology.getInstance());
+
+		// addBehaviour(new OntologyServer(this, AiguilleurOntology.getInstance(),
+		// ACLMessage.REQUEST, this));
+
+		requestGetHosts(aiguilleur);
+		requestAddHost(aiguilleur, "test");
+		requestAddHost(aiguilleur, "test2");
+		requestAddHost(aiguilleur, "test3");
+		requestGetHosts(aiguilleur);
+		requestSelectHostRandomly(aiguilleur);
+
+		// getContentManager().registerOntology(CompteurOntology.getInstance());
 
 		getContentManager().registerOntology(AgentRecOntology.getInstance());
 
@@ -82,6 +82,7 @@ public class AgentTest extends Agent {
 		try {
 			AddHost ah = new AddHost();
 			ah.addHost(host);
+			System.out.println("AgentTest - addHost - " + ah.getHost());
 			Action actExpr = new Action(aiguilleur, ah);
 			getContentManager().fillContent(request, actExpr);
 			addBehaviour(new AchieveREInitiator(this, request) {
