@@ -62,7 +62,8 @@ public class AgentTest extends Agent {
 			getContentManager().fillContent(request, actExpr);
 			addBehaviour(new AchieveREInitiator(this, request) {
 				public void handleInform(ACLMessage inform) {
-					System.out.println("Agent " + myAgent.getLocalName() + " - Added host: " + inform.getPerformative());
+					System.out.println("Agent " + myAgent.getLocalName() + " - Added host - performative: "
+							+ inform.getPerformative());
 				}
 			});
 		} catch (Exception e) {

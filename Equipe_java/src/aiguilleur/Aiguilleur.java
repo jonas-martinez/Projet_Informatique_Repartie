@@ -36,6 +36,7 @@ public class Aiguilleur extends Agent {
 	}
 
 	public void serveAddHostRequest(AddHost ah, ACLMessage request) {
+		System.out.println(ah.getHost());
 		this.hosts.add(ah.getHost());
 		ACLMessage reply = request.createReply();
 		reply.setPerformative(ACLMessage.INFORM);
