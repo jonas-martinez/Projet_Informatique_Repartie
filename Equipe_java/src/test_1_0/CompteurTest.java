@@ -11,13 +11,14 @@ public class CompteurTest extends Agent {
 	protected void setup() {
 
 		String compteurName = "compteur";
+		Object[] args = getArguments();
+		if (args != null && args.length > 0) {
+			compteurName = (String) args[0];
+		}
 		compteur = new AID(compteurName, AID.ISLOCALNAME);
 
 		getContentManager().registerLanguage(new SLCodec());
-
 		getContentManager().registerOntology(CompteurOntology.getInstance());
-
-		// getContentManager().registerOntology(CompteurOntology.getInstance());
 	}
 
 	private void requestDec(AID compteur) {

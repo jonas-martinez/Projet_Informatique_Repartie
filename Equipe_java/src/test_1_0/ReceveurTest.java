@@ -17,10 +17,13 @@ public class ReceveurTest extends Agent {
 
 	protected void setup() {
 		String receveurName = "receveur";
+		Object[] args = getArguments();
+		if (args != null && args.length > 0) {
+			receveurName = (String) args[0];
+		}
 		receveur = new AID(receveurName, AID.ISLOCALNAME);
 
 		getContentManager().registerLanguage(new SLCodec());
-
 		getContentManager().registerOntology(AgentRecOntology.getInstance());
 
 		requestGetType(receveur);

@@ -17,10 +17,13 @@ public class AiguilleurTest extends Agent {
 
 	protected void setup() {
 		String aiguilleurName = "aiguilleur";
+		Object[] args = getArguments();
+		if (args != null && args.length > 0) {
+			aiguilleurName = (String) args[0];
+		}
 		aiguilleur = new AID(aiguilleurName, AID.ISLOCALNAME);
 
 		getContentManager().registerLanguage(new SLCodec());
-
 		getContentManager().registerOntology(AiguilleurOntology.getInstance());
 
 		requestGetHosts(aiguilleur);

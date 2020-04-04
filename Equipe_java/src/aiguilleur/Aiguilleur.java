@@ -20,6 +20,10 @@ public class Aiguilleur extends Agent {
 		random = new Random();
 
 		String mobileAgentName = "mobile";
+		Object[] args = getArguments();
+		if (args != null && args.length > 0) {
+			mobileAgentName = (String) args[0];
+		}
 		mobileAgent = new AID(mobileAgentName, AID.ISLOCALNAME);
 
 		getContentManager().registerLanguage(new SLCodec());
