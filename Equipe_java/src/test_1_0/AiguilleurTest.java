@@ -17,11 +17,15 @@ public class AiguilleurTest extends Agent {
 
 	protected void setup() {
 		String aiguilleurName = "aiguilleur";
+		String aiguilleurIPAddress = "localhost";
 		Object[] args = getArguments();
 		if (args != null && args.length > 0) {
 			aiguilleurName = (String) args[0];
+			aiguilleurIPAddress = (String) args[1];
+
 		}
-		aiguilleur = new AID(aiguilleurName, AID.ISLOCALNAME);
+		aiguilleur = new AID(aiguilleurName + "@" + aiguilleurIPAddress + ":1099/JADE", AID.ISGUID);
+		aiguilleur.addAddresses("http://" + aiguilleurIPAddress + ":7778/acc");
 
 		getContentManager().registerLanguage(new SLCodec());
 		getContentManager().registerOntology(AiguilleurOntology.getInstance());
